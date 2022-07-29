@@ -1,0 +1,32 @@
+
+
+// Preloader
+
+window.onload = function loader() { 
+    setTimeout(() => {
+        document.getElementById('preloader').style.visibility = 'hidden';
+        document.getElementById('preloader').style.opacity = '0';
+    }, 350);
+} 
+
+$(document).ready(function(){
+    pagenum = 1;
+    function AutoRotate() {
+       var myele = null;
+       var allElements = document.getElementsByTagName('label');
+       for (var i = 0, n = allElements.length; i < n; i++) {
+           var myfor = allElements[i].getAttribute('for');
+           if ((myfor !== null) && (myfor == ('slide_2_' + pagenum))) {
+               allElements[i].click();
+               break;
+           }
+       }
+       if (pagenum == 4) {
+           pagenum = 1;
+       } else {
+           pagenum++;
+       }
+    }
+    setInterval(AutoRotate, 5000);
+});
+
