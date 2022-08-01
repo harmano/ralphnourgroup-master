@@ -34,6 +34,74 @@ html  {overflow-x: hidden!important}
 /*-- Google Font --*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+.section-img {
+  margin-top: 2.5%;
+  width: ;
+  padding-left: 40%;
+}
+.scroll-arrow {
+  width: 8%;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    padding:0;
+    margin:0;
+    opacity: 1;
+  font-size:20px;
+  transition: 0.2s;
+  color: #000;
+  margin-bottom: 20px;
+}
+.scroll-arrow:hover {
+  transition: 0.2s;
+  color: grey;
+}
+.display-sm-1{
+  display: none;
+}
+  .ul-img {
+    width: 100%;
+    scroll-behavior: smooth;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+  .ul-img::-webkit-scrollbar {
+    display: none;
+  }
+  .li-img {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: 20%;
+    height: ;
+    margin-left: .5%;
+    margin-right: .5%;
+      transition: 0.2s;
+  }
+.li-img, .portfolio-img {
+  width:600px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 0px !important;
+}
+.li-img:hover {
+    transition: 0.2s;
+    filter: grayscale(0);
+  }
+.title-container{
+  margin-top:-240px;
+  padding-bottom: 100px;margin-left: 10%;;
+}
 /*--------------------------------------------------------------
 # Common
 --------------------------------------------------------------*/
@@ -431,7 +499,7 @@ html  {overflow-x: hidden!important}
 .blue-line-horiz{
   background-color: var(--thm-lighblue);
   height: 7px;
-  width: 50%;
+  width: 60%;
   border-radius: 50px;
   float: right;
   margin-bottom: 150px;
@@ -767,7 +835,19 @@ padding-top: 150px;
   font-family: 'Open Sans', sans-serif;
   text-transform: capitalize;
 
+
 }
+
+.title-1-lg{
+  font-size: 90px;
+  font-weight: 700;
+  color: #000000;
+  padding:  0 ;
+  margin: 0px ;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: capitalize;
+}
+
 .title-2-white{
   font-size: 46px;
   font-weight: 700;
@@ -2063,6 +2143,10 @@ img {
   height: 980px;
   padding-bottom: 115px;
   background-position: bottom;
+}
+.fourofourbg {
+  height: 400px;
+  padding-bottom: 115px;
 }
 
 @media (max-width: 767px) {
@@ -5052,6 +5136,7 @@ img {
   margin: 80px 0 0!important;
   -webkit-transform: scale(1.1);
             transform: scale(1.1);
+  width: 100%;
 
 }
 @media (min-width: 1400px) {

@@ -11,6 +11,13 @@
 
   
   }
+  .button1{
+    font-size: 14px !important;
+    padding: 12px 15px !important;
+  }
+  .li-img, .portfolio-img {
+    width:300px;
+  }
   .blue-line-horiz{
     background-color: var(--thm-lighblue);
     height: 7px;
@@ -244,6 +251,33 @@
   .scal1{
     transform: scale(1);
   }
+  .section-img {
+    padding-left: 0%;
+  }
+  .display-sm-1{
+    display: inline-block;
+  }
+  .title-1-lg{
+    font-size: 35px;
+  }
+  .title-container{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-left: 0px;
+    margin-top:20px;
+  }
+  .display-md-1{
+    display: none;
+  }
+  .li-img, .portfolio-img {
+    width:300px;
+    height:200px;
+    object-fit: cover;
+  }
+  .scroll-arrow {
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
 }
 
 svg {
@@ -254,6 +288,16 @@ svg {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     *{
         border: 1px solid rgba(255, 255, 0, 0.433) !important;
+    }
+    .display-md-1{
+      display: none;
+    }
+    .scroll-arrow {
+      margin-bottom: 10px;
+      padding-left: 10px;
+    }
+    .section-img {
+      padding-left: 0%;
     }
     .service-display-n-mobile{
       display: none;
@@ -361,11 +405,43 @@ svg {
           height: 250px;
           width: 100%;
         }
+       
+        .title-container{
+          display: none;
+        }
+        .display-sm-1{
+          display: inline-block;
+        }
+        .title-1-lg{
+          font-size: 50px;
+        }
+        .title-container{
+          margin-bottom: 0px;
+          padding-bottom: 0px;
+          margin-left: 0px;
+          margin-top:60px;
+        }
+        .li-img, .portfolio-img {
+          width:300px;
+          height:200px;
+          object-fit: cover;
+        }
 }
 /* Medium screen GREEN */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
  * {
      border: 1px solid rgba(0, 128, 0, 0.385) !important;
+  }
+  .li-img, .portfolio-img {
+    width:600px;
+    height: 350px;
+    object-fit: cover;
+  }
+  .display-sm-1{
+    display: none;
+  }
+  .li-img, .portfolio-img {
+    width:400px;
   }
   .counter-item span {
     font-size: 50px;
@@ -426,6 +502,13 @@ svg {
       left: 14px !important;
       text-shadow: 0px 0px 10px rgba(0,0,0,0.9);
       padding: 0px;
+    }
+    .title-1-lg{
+      font-size: 60px;
+    }
+    .title-container{
+      margin-top:-200px;
+      padding-bottom: 100px;margin-left: 10%;;
     }
   
 }
